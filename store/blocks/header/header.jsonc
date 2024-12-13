@@ -23,14 +23,13 @@
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventVerticalStretch": true,
-      "preventhorizontalStretch": true,
+      "preventHorizontalStretch": true,
       "fullWidth": true
     },
     "children":[
-      // "flex-layout.col#logo-desktop",
-      "logo",
-      // "flex-layout.col#category-menu",
-      // "flex-layout.col#spacer",
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
       "login",
@@ -38,11 +37,25 @@
     ]
   },
   "flex-layout.col#logo-desktop": {
-    "children": ["logo"]
+    "children": ["logo#desktop"]
   },
-  // "flex-layout.col#category-menu": {
-  //   "children": []
-  // },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vtexassets.com/arquivos/store-theme-logo.png",
+      "width": "180",
+      "height": "12"
+    }
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#category-menu"
+    ]
+  },
   "flex-layout.row#1-desktop": {
     "props": {},
     "children": [
