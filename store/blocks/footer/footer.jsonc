@@ -1,6 +1,7 @@
 {
   "footer": {
     "blocks": ["footer-layout.desktop"]
+    // todo footer-layout.mobile
   },
   "footer-layout.desktop": {
     "children": [

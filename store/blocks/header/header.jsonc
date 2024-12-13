@@ -7,50 +7,49 @@
   },
   "header-layout.desktop": {
     "children": [
+      "flex-layout.row#1-desktop",
       "sticky-layout#desktop"
     ]
   },
   "sticky-layout#desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#desktop"]
+    "props": {},
+    "children": [
+      "flex-layout.row#2-desktop"
+    ]
   },
-  "flex-layout.row#desktop": {
+  "flex-layout.row#2-desktop": {
     "props": {
+      "blockClass": "main-header-desktop",
       "horizontalAlign": "center",
       "verticalAlign": "center",
-      "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
+      "preventhorizontalStretch": true,
       "fullWidth": true
     },
-    "children": [
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
+    "children":[
+      // "flex-layout.col#logo-desktop",
+      "logo",
+      // "flex-layout.col#category-menu",
+      // "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
       "login",
       "minicart.v2"
     ]
   },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
   "flex-layout.col#logo-desktop": {
-    "props": {
-      "verticalAlign": "middle"
-    },
     "children": ["logo"]
   },
-  "logo": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
-    }
+  // "flex-layout.col#category-menu": {
+  //   "children": []
+  // },
+  "flex-layout.row#1-desktop": {
+    "props": {},
+    "children": [
+      "vtex.menu@2.x:menu#websites",
+      "flex-layout.col#spacer",
+      "vtex.menu@2.x:menu#institutional"
+    ]
   },
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
@@ -61,7 +60,7 @@
   "flex-layout.row#mobile": {
     "children": [
       "drawer",
-      "logo",
+      "logo#mobile",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
@@ -74,6 +73,40 @@
     }
   },
   "drawer": {
-    "children": []
+    "children": ["menu#drawer"]
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#apparel",
+      "menu-item#homedecor",
+      "menu-item#more"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
+      "width": "77.5",
+      "height": "27.5"
+    }
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "showIconProfile": true
+    }
   }
 }
