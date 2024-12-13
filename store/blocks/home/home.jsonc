@@ -2,7 +2,9 @@
   "store.home": {
     "blocks": [
       "list-context.image-list#demo",
-      "flex-layout.row#deals"
+      "flex-layout.row#deals",
+      "info-card#home",
+      "newsletter"
     ]
   },
 
@@ -36,28 +38,19 @@
     }
   },
 
-  "rich-text#1": {
-    "props": {
-      "text": "Test1"
-    }
-  },
-  "rich-text#2": {
-    "props": {
-      "text": "Test2"
-    }
-  },
-  "rich-text#3": {
-    "props": {
-      "text": "Test3"
-    }
-  },
-
-  "rich-text": {
-    "props": {
-      "text": "SESION 02 Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
+  "info-card#home": {
+    "props":{
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center",
+      "fetchpriority": "auto",
+      "preload": true
     }
   }
 }
