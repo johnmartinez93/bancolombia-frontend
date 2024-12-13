@@ -1,0 +1,63 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      "flex-layout.row#deals"
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+     "height": 570,
+     "images": [
+      {
+        "image": "https://storecomponents.vtexassets.com/arquivos/Class&Style-desktop.png",
+        "mobileImage": ""
+      },
+      {
+        "image": "https://storecomponents.vtexassets.com/arquivos/banner-decoration.png",
+        "mobileImage": ""
+      }
+     ]
+    }
+  },
+
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "rich-text#1": {
+    "props": {
+      "text": "Test1"
+    }
+  },
+  "rich-text#2": {
+    "props": {
+      "text": "Test2"
+    }
+  },
+  "rich-text#3": {
+    "props": {
+      "text": "Test3"
+    }
+  },
+
+  "rich-text": {
+    "props": {
+      "text": "SESION 02 Store Framework",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  }
+}
