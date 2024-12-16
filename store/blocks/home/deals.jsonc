@@ -17,14 +17,14 @@
       "rich-text#deal1"
     ]
   },
-  "image#deal1":{
-    "props":{
-      "src": "https://storecomponents.vtexassets.com/arquivos/box.png",
+  "image#deal1": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal1": {
-    "props":{
+    "props": {
       "text": "Free shipping",
       "blockClass": "deals"
     }
@@ -35,14 +35,14 @@
       "rich-text#deal2"
     ]
   },
-  "image#deal2":{
-    "props":{
-      "src": "https://storecomponents.vtexassets.com/arquivos/delivery-fast.png",
+  "image#deal2": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/delivery-fast.png",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal2": {
-    "props":{
+    "props": {
       "text": "One day delivery",
       "blockClass": "deals"
     }
@@ -53,14 +53,14 @@
       "rich-text#deal3"
     ]
   },
-  "image#deal3":{
-    "props":{
-      "src": "https://storecomponents.vtexassets.com/arquivos/store.png",
+  "image#deal3": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/store.png",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal3": {
-    "props":{
+    "props": {
       "text": "Pick up in store",
       "blockClass": "deals"
     }
@@ -71,14 +71,14 @@
       "rich-text#deal4"
     ]
   },
-  "image#deal4":{
-    "props":{
-      "src": "https://storecomponents.vtexassets.com/arquivos/coupon.png",
+  "image#deal4": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/coupon.png",
       "maxHeight": "24px"
     }
   },
   "rich-text#deal4": {
-    "props":{
+    "props": {
       "text": "Exclusive deals",
       "blockClass": "deals"
     }
